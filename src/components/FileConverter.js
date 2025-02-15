@@ -47,7 +47,7 @@ export default function FileConverter() {
         formData.append("conversionType", conversionType);
 
         try {
-            const response = await fetch("https://file-converter-backend-jl7o.onrender.com", {
+            const response = await fetch("https://file-converter-backend-jl7o.onrender.com/upload", {
                 method: "POST",
                 body: formData,
             });
